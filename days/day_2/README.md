@@ -1,5 +1,5 @@
-# Day one
-[Day one](https://adventofcode.com/2024/day/2) puzzle [input](https://adventofcode.com/2024/day/2/input):
+# Day two
+[Day two](https://adventofcode.com/2024/day/2) puzzle [input](https://adventofcode.com/2024/day/2/input):
 
 **Example input:**
 ```

@@ -9,6 +9,7 @@ if __name__ == "__main__":
     for day in [
         days.DayOne,
         days.DayTwo,
+        days.DayThree,
     ]:
         day()
 
