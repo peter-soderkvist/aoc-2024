@@ -1,5 +1,5 @@
 import logging
-from days.day_1 import DayOne
+import days
 
 
 logging.basicConfig(level=logging.INFO)
@@ -7,7 +7,8 @@ logging.basicConfig(level=logging.INFO)
 
 if __name__ == "__main__":
     for day in [
-        DayOne,
+        days.DayOne,
+        days.DayTwo,
     ]:
         day()
 

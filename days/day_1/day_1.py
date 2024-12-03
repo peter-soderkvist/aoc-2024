@@ -1,4 +1,4 @@
-from datetime import datetime
+import sys
 
 from ..day_abc import AbsDay
 
@@ -18,13 +18,15 @@ class DayOne(AbsDay):
         super().__init__()
 
     def run(self):
-        self.logger.info("Day 1 running")
+        self.logger.info(f"----- {self.__class__.__name__} running -----")
         
         for part in [self.part_one, self.part_two]:
             # Example input
+            self.logger.info(f"{part.__name__} running with example input")
             part(EXAMPLE_INPUT)
 
             # Actual input
+            self.logger.info(f"{part.__name__} running with actual input")
             with open("days/day_1/input.txt") as f:
                 input = f.readlines()
                 part(input)
@@ -47,7 +49,6 @@ class DayOne(AbsDay):
         return (left, right)
         
     def part_one(self, input: list):
-        self.logger.info("Part one running")
         left, right = self.parse_input(input)
 
         # Calculate total distance between pairs in the two lists
@@ -59,7 +60,6 @@ class DayOne(AbsDay):
         self.logger.info(f"--> Total distance: {total_distance}")
 
     def part_two(self, input: list):
-        self.logger.info("Part two running")
         left, right = self.parse_input(input)
         
         # Calculate similarity
